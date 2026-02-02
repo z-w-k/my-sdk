@@ -1,20 +1,20 @@
-# @my-sdk/core
+# @zhj-sdk/core
 
 Core utilities and shared functionality for the SDK.
 
 ## Installation
 
 ```bash
-npm install @my-sdk/core
+npm install @zhj-sdk/core
 # or
-pnpm add @my-sdk/core
+pnpm add @zhj-sdk/core
 ```
 
 ## Usage
 
 ```typescript
-import { deepMerge, debounce, throttle, generateId } from "@my-sdk/core";
-import type { SDKConfig, ApiResponse } from "@my-sdk/core";
+import { deepMerge, debounce, throttle, generateId } from "@zhj-sdk/core";
+import type { SDKConfig, ApiResponse } from "@zhj-sdk/core";
 
 // Deep merge objects
 const merged = deepMerge({ a: 1 }, { b: 2 });

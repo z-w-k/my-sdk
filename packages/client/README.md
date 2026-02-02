@@ -1,19 +1,19 @@
-# @my-sdk/client
+# @zhj-sdk/client
 
 HTTP client for API interactions.
 
 ## Installation
 
 ```bash
-npm install @my-sdk/client
+npm install @zhj-sdk/client
 # or
-pnpm add @my-sdk/client
+pnpm add @zhj-sdk/client
 ```
 
 ## Usage
 
 ```typescript
-import { HttpClient } from "@my-sdk/client";
+import { HttpClient } from "@zhj-sdk/client";
 
 const client = new HttpClient({
   baseUrl: "https://api.example.com",

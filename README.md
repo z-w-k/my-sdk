@@ -15,8 +15,8 @@ A TypeScript monorepo for frontend SDK packages.
 
 | Package | Description |
 |---------|-------------|
-| `@my-sdk/core` | Core utilities and shared functionality |
-| `@my-sdk/client` | HTTP client for API interactions |
+| `@zhj-sdk/core` | Core utilities and shared functionality |
+| `@zhj-sdk/client` | HTTP client for API interactions |
 
 ## Getting Started
 
@@ -75,14 +75,14 @@ pnpm release
 ## Project Structure
 
 ```
-my-sdk/
+zhj-sdk/
 ├── packages/
-│   ├── core/           # @my-sdk/core
+│   ├── core/           # @zhj-sdk/core
 │   │   ├── src/
 │   │   ├── package.json
 │   │   ├── tsconfig.json
 │   │   └── tsup.config.ts
-│   └── client/         # @my-sdk/client
+│   └── client/         # @zhj-sdk/client
 │       ├── src/
 │       ├── package.json
 │       ├── tsconfig.json

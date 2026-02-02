@@ -5,7 +5,7 @@ import {
   type SDKConfig,
   type RequestOptions,
   type ApiResponse,
-} from "@my-sdk/core";
+} from "@zhj-sdk/core";
 
 export interface HttpClientConfig extends SDKConfig {
   retries?: number;

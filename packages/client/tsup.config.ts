@@ -9,5 +9,5 @@ export default defineConfig({
   clean: true,
   treeshake: true,
   minify: false,
-  external: ["@my-sdk/core"],
+  external: ["@zhj-sdk/core"],
 });
