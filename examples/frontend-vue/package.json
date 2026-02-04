@@ -1,0 +1,33 @@
+{
+  "name": "@zhj-sdk/example-frontend-vue",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build:example": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@zhj-sdk/client": "workspace:*",
+    "@zhj-sdk/core": "workspace:*",
+    "vue": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "vue-tsc": "^1.8.25"
+  },
+  "turbo":{
+    "task": {
+      "build": {
+        "outputs": []
+      },
+      "test": {
+        "outputs": []
+      },
+      "lint": {
+        "outputs": []
+      }
+    }
+  }
+}

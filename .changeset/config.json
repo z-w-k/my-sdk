@@ -3,9 +3,9 @@
   "changelog": "@changesets/cli/changelog",
   "commit": false,
   "fixed": [],
-  "linked": [],
+  "linked": ["@zhj-sdk/client", "@zhj-sdk/core"],
   "access": "public",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
-  "ignore": []
+  "ignore": ["@zhj-sdk/example-*", "**/example*"]
 }

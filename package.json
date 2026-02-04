@@ -5,14 +5,17 @@
   "description": "Frontend SDK Monorepo",
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
     "test": "turbo run test",
-    "clean": "turbo run clean && rm -rf node_modules",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "clean": "turbo run clean",
     "changeset": "changeset",
     "version-packages": "changeset version",
     "release": "turbo run build && changeset publish",
+    "example:dev": "cd examples && start-examples.bat",
+    "example:backend": "pnpm --filter @zhj-sdk/example-backend-express dev",
+    "example:frontend": "pnpm --filter @zhj-sdk/example-frontend-vue dev",
+    "dev": "turbo run dev",
     "prepare": "husky"
   },
   "devDependencies": {

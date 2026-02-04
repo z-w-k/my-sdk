@@ -18,7 +18,9 @@
       }
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
@@ -27,8 +29,13 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@zhj-sdk/core": "workspace:*"
+    "@zhj-sdk/core": "workspace:*",
+    "axios": "^1.13.4"
   },
-  "keywords": ["sdk", "client", "http"],
+  "keywords": [
+    "sdk",
+    "client",
+    "http"
+  ],
   "license": "MIT"
 }
