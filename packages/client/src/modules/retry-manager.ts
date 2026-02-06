@@ -1,5 +1,5 @@
 import { AxiosResponse } from "axios";
-import { sleep } from "@zhj-sdk/core";
+import { sleep } from "@zhj-sdk/utils";
 import { RetryConfig, SDKError } from "../types";
 import { MetricsCollector } from "./metrics";
 

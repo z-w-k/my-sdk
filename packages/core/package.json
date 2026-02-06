@@ -23,8 +23,7 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "lint": "eslint src --ext .ts,.tsx",
-    "clean": "rm -rf dist .turbo",
-    "test": "vitest run"
+    "clean": "rm -rf dist .turbo"
   },
   "keywords": ["sdk", "core"],
   "license": "MIT"

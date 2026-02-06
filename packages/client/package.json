@@ -29,7 +29,7 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@zhj-sdk/core": "workspace:*",
+    "@zhj-sdk/utils": "workspace:*",
     "axios": "^1.13.4"
   },
   "keywords": [

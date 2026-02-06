@@ -19,7 +19,7 @@ import axios, {
   AxiosResponse,
   InternalAxiosRequestConfig,
 } from "axios";
-import { deepMerge } from "@zhj-sdk/core";
+import { deepMerge } from "@zhj-sdk/utils";
 import { DEFAULT_TIMEOUT } from "./constants";
 import {
   SDKConfig,

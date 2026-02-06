@@ -73,7 +73,7 @@ importers:
         specifier: ^4.6.2
         version: 4.21.0
 
-  examples/frontend-react:
+  examples/frontend-vue:
     dependencies:
       '@zhj-sdk/client':
         specifier: workspace:*
@@ -88,26 +88,22 @@ importers:
       '@vitejs/plugin-vue':
         specifier: ^5.0.0
         version: 5.2.4(vite@5.4.21)(vue@3.5.27)
-      typescript:
-        specifier: ^5.2.2
-        version: 5.9.3
-      vite:
-        specifier: ^5.0.8
-        version: 5.4.21(@types/node@20.19.30)
       vue-tsc:
         specifier: ^1.8.25
         version: 1.8.27(typescript@5.9.3)
 
   packages/client:
     dependencies:
-      '@zhj-sdk/core':
+      '@zhj-sdk/utils':
         specifier: workspace:*
-        version: link:../core
+        version: link:../utils
       axios:
         specifier: ^1.13.4
         version: 1.13.4
 
   packages/core: {}
+
+  packages/utils: {}
 
 packages:
 

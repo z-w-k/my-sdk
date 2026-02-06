@@ -9,5 +9,5 @@ export default defineConfig({
   clean: true,
   treeshake: true,
   minify: false,
-  external: ["@zhj-sdk/core","axios"],
+  external: ["@zhj-sdk/utils","axios"],
 });

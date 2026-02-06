@@ -1,0 +1,43 @@
+{
+  "name": "@zhj-sdk/utils",
+  "version": "0.1.0",
+  "description": "常用操作的工具函数库，提供对象操作、异步控制、ID生成、函数防抖节流等功能",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src --ext .ts,.tsx",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "utils",
+    "tools",
+    "typescript",
+    "zhj-sdk"
+  ],
+  "author": "ZHJ SDK Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/zhj-sdk",
+    "directory": "packages/utils"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/zhj-sdk/issues"
+  },
+  "homepage": "https://github.com/your-org/zhj-sdk/tree/main/packages/utils#readme"
+}

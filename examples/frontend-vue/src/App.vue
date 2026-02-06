@@ -133,11 +133,6 @@ const newUser = ref({ name: '', email: '' })
 const httpClient = createHttpClient({
   baseUrl: '/api',
   timeout: 10000,
-  cacheConfig: {
-    enabled: true,
-    ttl: 60000, // 1分钟缓存
-    maxEntries: 100,
-  },
   retryConfig: {
     maxRetries: 3,
     retryDelay: 1000,
@@ -150,9 +145,6 @@ httpClient.setMetricsCollector((metric: Metrics) => {
 })
 
 // HttpClient 现在自动处理后端的 ApiResponse 格式，无需额外拦截器
-httpClient.addResponseInterceptor(response=>{
-  return response
-})
 
 // 添加响应验证器
 // httpClient.addResponseValidator<User[]>((data) => {
@@ -176,7 +168,6 @@ const fetchUsers = async () => {
     })
     users.value = response.data
   } catch (err) {
-    debugger
     error.value = err instanceof Error ? err.message : 'Failed to fetch users'
   } finally {
     loading.value = false
